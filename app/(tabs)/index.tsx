@@ -23,7 +23,7 @@ export default function Index() {
     data: trendingMovies,
     loading: trendingLoading,
     error: trendingError,
-  } = useFetch(() => getTrendingMovies(), false);
+  } = useFetch(() => getTrendingMovies());
 
   const {
     data: movies,
