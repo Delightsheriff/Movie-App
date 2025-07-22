@@ -34,7 +34,7 @@ const Moviecard = ({
 
         <View className="flex-row items-center justify-between">
           <Text className="text-xs text-light-300 font-medium mt-1">
-            {release_date.split("-")[0]}
+            {release_date?.split("-")[0]}
           </Text>
           {/* <Text className="text-xs text-light-300 font-medium uppercase">
             Movie
