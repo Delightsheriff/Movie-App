@@ -1,50 +1,75 @@
-# Welcome to your Expo app 👋
+# Movie App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This is a movie discovery application built with Expo and React Native. It uses the [The Movie Database (TMDb)](https://www.themoviedb.org/) API to fetch movie data.
 
-## Get started
+## Features
 
-1. Install dependencies
+- Discover popular movies.
+- Search for movies.
+- View movie details.
+- Save movies to your profile (requires Appwrite configuration).
+
+## Prerequisites
+
+- [Node.js](https://nodejs.org/) (LTS version recommended)
+- [Expo CLI](https://docs.expo.dev/get-started/installation/)
+- [TMDB API Key](https://www.themoviedb.org/documentation/api)
+
+## Getting Started
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/your-username/movie-app.git
+   cd movie-app
+   ```
+
+2. **Install dependencies:**
 
    ```bash
    npm install
    ```
 
-2. Start the app
+3. **Set up environment variables:**
+
+   Create a `.env` file in the root of the project and add your TMDB API key:
+
+   ```
+   EXPO_PUBLIC_MOVIE_API_KEY=your_tmdb_api_key
+   ```
+
+4. **Start the development server:**
 
    ```bash
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+   This will open the Expo DevTools in your browser. You can then run the app on:
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+   - An Android emulator or device.
+   - An iOS simulator or device.
+   - In your web browser.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Appwrite (Optional)
 
-## Get a fresh project
+This project includes optional integration with [Appwrite](https://appwrite.io/) for user authentication and saving movies. To use these features, you will need to:
 
-When you're ready, run:
+1. **Set up an Appwrite project.**
+2. **Configure the following environment variables in your `.env` file:**
 
-```bash
-npm run reset-project
-```
+   ```
+   EXPO_PUBLIC_APPWRITE_ENDPOINT=your_appwrite_endpoint
+   EXPO_PUBLIC_APPWRITE_PROJECT_ID=your_appwrite_project_id
+   ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+3. **Configure the Appwrite services in `services/appwrite.ts`.**
 
-## Learn more
+## Learn More
 
-To learn more about developing your project with Expo, look at the following resources:
+To learn more about the technologies used in this project, see the following resources:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- [Expo Documentation](https://docs.expo.dev/)
+- [React Native Documentation](https://reactnative.dev/docs)
+- [NativeWind Documentation](https://www.nativewind.dev/)
+- [TMDb API Documentation](https://www.themoviedb.org/documentation/api)
+- [Appwrite Documentation](https://appwrite.io/docs)
